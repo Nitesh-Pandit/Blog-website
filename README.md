@@ -106,7 +106,7 @@ Right-click index.html → “Open with Live Server”
 
 or simply open it in any web browser.
 
- ##--------Learning Outcomes---------
+## Learning Outcomes
 
 Structuring multi-post blogs using HTML
 
@@ -118,7 +118,7 @@ Implementing real-time search and category filters
 
 Creating social-share links dynamically
 
---------Future Enhancements-------
+## Future Enhancements
 
  Admin dashboard to add/edit/delete posts
 
@@ -129,7 +129,7 @@ Creating social-share links dynamically
  Add Dark/Light mode toggle (optional feature)
 
 
- ##### Author
+ ## Author
 
 Nitesh pandit
 
