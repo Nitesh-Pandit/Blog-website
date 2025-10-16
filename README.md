@@ -6,32 +6,6 @@ Users can explore blog posts, search content, filter by categories,
 
 post comments, and share blogs on social media platforms.
 
-![Website Preview]
-----------
-Screen sorts: 
-
-------Header section ------>
-
-![alt text](image.png)
-
-------Main section ------
-
-![alt text](image-1.png)
-
-![alt text](image-2.png)
-
-![alt text](image-3.png)
-
-![alt text](image-4.png)
-
-![alt text](image-5.png)
-
-------Footer section--------
-
-![alt text](image-6.png)
-
----
-
 ##  Features
 
 ###  Blog Posts
@@ -157,7 +131,7 @@ Creating social-share links dynamically
 
  ##### Author
 
---------Nitesh pandit-----------
+Nitesh pandit
 
 📅 Project Year: 2025
 
