@@ -6,7 +6,16 @@ Users can explore blog posts, search content, filter by categories,
 
 post comments, and share blogs on social media platforms.
 
-![Website Preview](images/image.png)
+![Website Preview]
+----------
+Screen sorts: 
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)![alt text](image-6.png)
 
 ---
 
@@ -140,11 +149,3 @@ Creating social-share links dynamically
 📅 Project Year: 2025
 💼 Project: Blog Website using HTML, CSS & JavaScript
 
-Screen sorts: 
-
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)![alt text](image-6.png)
