@@ -10,12 +10,20 @@ post comments, and share blogs on social media platforms.
 ----------
 Screen sorts: 
 
+------Header sectin ------>
+
 ![alt text](image.png)
+
+------Main section ------
+
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
-![alt text](image-5.png)![alt text](image-6.png)
+![alt text](image-5.png)
+
+------Footer section--------
+![alt text](image-6.png)
 
 ---
 
