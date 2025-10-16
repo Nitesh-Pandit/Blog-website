@@ -6,7 +6,7 @@ Users can explore blog posts, search content, filter by categories,
 
 post comments, and share blogs on social media platforms.
 
-![Website Preview](images/preview.png)
+![Website Preview](image-1.png)
 
 ---
 
