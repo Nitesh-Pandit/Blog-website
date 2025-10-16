@@ -14,7 +14,7 @@ Screen sorts:
 
 ![alt text](image.png)
 
-!------[Main section] ------
+------Main section ------
 
 ![alt text](image-1.png)
 
@@ -160,5 +160,6 @@ Creating social-share links dynamically
 --------Nitesh pandit-----------
 
 📅 Project Year: 2025
+
 💼 Project: Blog Website using HTML, CSS & JavaScript
 
