@@ -106,9 +106,9 @@ README.md # Project documentation (this file)
 
 ## 📸 Screenshots
 
-![Blog Home](https://via.placeholder.com/600x400.png?text=Blog+Home)
-![Post Detail](https://via.placeholder.com/600x400.png?text=Post+Detail)
-
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 ---
 
 ## 🤝 Contributing
@@ -122,7 +122,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 ## ✉️ Contact
-Created by [Your Name](https://github.com/your-username) – feel free to connect! 🌟
+Created by [Nitesh pandit](https://github.com/Nitesh-Pandit/Blog-website) – feel free to connect! 🌟
 
 ---
 
@@ -162,4 +162,3 @@ Nitesh pandit
 ##  Conclusion
 This project showcases how HTML, CSS, and JavaScript can be combined to create a dynamic, user-friendly, and responsive web interface.
 It fulfills all project requirements and includes several enhancements for a better user experience.
->>>>>>> 9c2ebf58384f9c47428e50ffb952ab84b24847bd
