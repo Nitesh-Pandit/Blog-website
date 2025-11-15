@@ -6,7 +6,7 @@ A responsive and interactive personal blog website showcasing posts about Villag
 ---
 
 ## 🌐 Demo
-[🌟 Live Demo](#) (Add your deployed site link here)
+[🌟 Live Demo](#) ([Add your deployed site link here](https://nitesh-pandit.github.io/Blog-website/))
 =======
 Users can explore blog posts, search content, filter by categories, 
 
