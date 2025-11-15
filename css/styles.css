@@ -1,171 +1,451 @@
 /* Default styles ofr all elements */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 /* Body styles */
-body{
-  font-family: 'Poppins', sans-serif;/* Set main font */
-  background:#f5f6fa;/* Light gray background */
-  color:#333;
-  line-height:1.6;/* Improved readability */
-}
-/* Header styling */
-header{
-  background:#8d06c7;/* Green background */
-  color:#fff;/* White text in header */
-  padding:20px;/* Space around header content */
-  text-align:center;/* Center align header content */
-}
-/* Header title styling */
-header h1{
-  margin-bottom:10px;/* Space below header title */
-}
-/* Navigation menu list styles */
-nav ul{
-  list-style:none;/* Remove default list styling */
-  display: flex;
-  justify-content: center;/* Center navigation items */
-  gap:15px;/* Space between navigation items */
-}
-.tags{
-  margin-bottom:10px;/* Space below tags paragraph */
-}
-/* Navigation links styles */
-nav ul li a{
-  color:#fff;/* White text for links */
-  text-decoration:none;/* Remove underline from links */
-  padding:8px 12px;/* Space around link text */
-  border-radius:4px;/* Rounded corners for links */
-  transition:background 0.3s;/* Smooth background transition on hover */
-}
-/* Search input styling */
-#searchInput{
-  margin-top:10px;/*space above inputs*/
-  padding:8px;/* Space inside input */
-  border:1px solid #ccc;/* Light gray border */
-  border-radius:4px;/* Rounded corners for input */
-  width: 40%;
-}
-/* #categoryFilter styling*/
-#categoryFilter{
-  margin-top:10px;/*space above inputs*/
-  padding:8px;/* Space inside input */
-  border:1px solid #ccc;/* Light gray border */
-  border-radius:4px;/* Rounded corners for input */
-  width: 20%;
-}
-/* Main content area styling */
-main{
-  padding:20px;/* Space around main content */
-  max-width:600px;/* Limit maximum width for better readability */
-  margin:20px auto;/* Center main content with vertical spacing */
-}
-/* Blog post card styling */
-.blog-post{
-  background:#fff;/* White background for blog posts */
-  padding:15px;/* Space inside blog post cards */
-  margin-bottom:20px;/* Space below each blog post */
-  border-radius:8px;/* Rounded corners for blog post cards */
-  box-shadow:0 2px 5px rgba(0,0,0,0.1);/* Subtle shadow for depth */
-}
-/* Blog post image styling */
-.blog-post img{
-  max-width:100%;/* Ensure images fit within blog post */
-  border-radius:4px;/* Rounded corners for images */
-  margin-bottom:10px;/* Space below images */
-}
-/* Publication date styling */
-.date{
-  color:#888;/* Gray color for date */
-  font-size:0.9em;/* Slightly smaller font size */
-  margin-bottom:10px;/* Space below date */
-}
-/* Individual tag styling */
-.tags span{
-  background:#8d06c7;/* Light gray background for tags */
-  color:white;/* Darker text for tags */
-  padding:5px 10px;/* Space inside tag */
-  border-radius:4px;/* Rounded corners for tags */
-  margin-right:5px;/* Space between tags */
-  font-size:0.85em;/* Slightly smaller font size for tags */
-}
-/* Share buttons container */
-.share-buttons{
-  margin-top:10px;/* Space above share buttons */
-}
-/* Individual share button styling */
-.share-buttons button{
-  background:#8d06c7;/* Green background for buttons */
-  color:#fff;/* White text for buttons */
-  border:none;/* Remove default button border */
-  padding:8px 12px;/* Space inside buttons */
-  border-radius:4px;/* Rounded corners for buttons */
-  cursor:pointer;/* Pointer cursor on hover */
-  margin: 5px 5px 0 0;/* Space between buttons */
-  transition:background 0.3s;/* Smooth background transition on hover */
-}
-/* Share button hover effect */
-.share-buttons button:hover{
-  background:#3e0656;/* Darker green on hover */
-}
-/* Comments section styling */
-.comments{
-  margin-top:20px;/* Space above comments section */
-}
-/* Individual comment styling */
-.comment{
-  background:#f9f9f9;/* Light gray background for comments */
-  padding:10px;/* Space inside comment */
-  border-radius:4px;/* Rounded corners for comments */
-  margin-bottom:10px;/* Space below each comment */
-}
-/* Comment suthor name styling */
-.comment strong{
-  color:#8a04ff;/* Blue color for author name */
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+  /* Set main font */
+
+  background: #f5f6fa;
+  /* Light gray background */
+
+  color: #333;
+
+  line-height: 1.6;
+  /* Improved readability */
 
 }
-/* Comment form input styling */
-.comment-form input, .comment-form textarea{
-  width:100%;/* Full width for inputs and textarea */
-  padding:10px;/* Space inside inputs and textarea */
-  margin-bottom:10px;/* Space below inputs and textarea */
-  border:1px solid #ccc;/* Light gray border */
-  border-radius:4px;/* Rounded corners for inputs and textarea */
+
+/* Header styling */
+
+
+header {
+
+
+  background: #8d06c7;
+  /* Green background */
+
+  color: #fff;
+  /* White text in header */
+
+  padding: 20px;
+  /* Space around header content */
+
+  text-align: center;
+  /* Center align header content */
+
 }
+
+/* Header title styling */
+
+header h1 {
+
+  margin-bottom: 10px;
+  /* Space below header title */
+
+}
+
+/* Navigation menu list styles */
+
+nav ul {
+
+  list-style: none;
+  /* Remove default list styling */
+
+  display: flex;
+
+  justify-content: center;
+  /* Center navigation items */
+
+  gap: 15px;
+  /* Space between navigation items */
+
+}
+
+.tags {
+
+  margin-bottom: 10px;
+  /* Space below tags paragraph */
+
+
+
+}
+
+/* Navigation links styles */
+
+nav ul li a {
+
+  color: #fff;
+  /* White text for links */
+
+
+  text-decoration: none;
+  /* Remove underline from links */
+
+  padding: 8px 12px;
+  /* Space around link text */
+
+  border-radius: 4px;
+  /* Rounded corners for links */
+
+  transition: background 0.3s;
+  /* Smooth background transition on hover */
+
+}
+
+
+/* Search input styling */
+
+#searchInput {
+
+  margin-top: 10px;
+  /*space above inputs*/
+
+  padding: 8px;
+  /* Space inside input */
+
+  border: 1px solid #ccc;
+  /* Light gray border */
+
+  border-radius: 4px;
+  /* Rounded corners for input */
+
+  width: 40%;
+
+}
+
+/* #categoryFilter styling*/
+
+#categoryFilter {
+
+  margin-top: 10px;
+  /*space above inputs*/
+
+  padding: 8px;
+  /* Space inside input */
+
+
+  border: 1px solid #ccc;
+  /* Light gray border */
+
+  border-radius: 4px;
+  /* Rounded corners for input */
+
+  width: 20%;
+
+
+
+}
+
+/* Main content area styling */
+
+
+main {
+
+  padding: 20px;
+  /* Space around main content */
+
+  max-width: 600px;
+  /* Limit maximum width for better readability */
+
+  margin: 20px auto;
+  /* Center main content with vertical spacing */
+
+}
+
+/* Blog post card styling */
+
+.blog-post {
+
+  background: #fff;
+  /* White background for blog posts */
+
+  padding: 15px;
+  /* Space inside blog post cards */
+
+  margin-bottom: 20px;
+  /* Space below each blog post */
+
+  border-radius: 8px;
+  /* Rounded corners for blog post cards */
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+
+
+}
+
+/* Blog post image styling */
+
+.blog-post img {
+
+  max-width: 100%;
+  /* Ensure images fit within blog post */
+
+
+  border-radius: 4px;
+  /* Rounded corners for images */
+
+  margin-bottom: 10px;
+  /* Space below images */
+
+}
+
+/* Publication date styling */
+
+.date {
+
+  color: #888;
+  /* Gray color for date */
+
+  font-size: 0.9em;
+  /* Slightly smaller font size */
+
+  margin-bottom: 10px;
+  /* Space below date */
+
+
+}
+
+/* Individual tag styling */
+
+.tags span {
+
+  background: #8d06c7;
+  /* Light gray background for tags */
+
+  color: white;
+  /* Darker text for tags */
+
+  padding: 5px 10px;
+  /* Space inside tag */
+
+  border-radius: 4px;
+  /* Rounded corners for tags */
+
+  margin-right: 5px;
+  /* Space between tags */
+
+  font-size: 0.85em;
+  /* Slightly smaller font size for tags */
+
+}
+
+/* Share buttons container */
+
+.share-buttons {
+
+  margin-top: 10px;
+  /* Space above share buttons */
+
+}
+
+/* Individual share button styling */
+
+.share-buttons button {
+
+  background: #8d06c7;
+  /* Green background for buttons */
+
+
+
+  color: #fff;
+  /* White text for buttons */
+
+  border: none;
+  /* Remove default button border */
+
+
+  padding: 8px 12px;
+  /* Space inside buttons */
+
+  border-radius: 4px;
+  /* Rounded corners for buttons */
+
+  cursor: pointer;
+  /* Pointer cursor on hover */
+
+  margin: 5px 5px 0 0;
+  /* Space between buttons */
+
+  transition: background 0.3s;
+  /* Smooth background transition on hover */
+
+}
+
+/* Share button hover effect */
+
+.share-buttons button:hover {
+
+  background: #3e0656;
+  /* Darker green on hover */
+
+
+}
+
+/*
+ Comments section styling */
+
+.comments {
+
+
+  margin-top: 20px;
+  /* Space above comments section */
+
+
+}
+
+
+
+/* Individual comment styling */
+
+.comment {
+
+  background: #f9f9f9;
+  /* Light gray background for comments */
+
+
+
+  padding: 10px;
+  /* Space inside comment */
+
+
+  border-radius: 4px;
+  /* Rounded corners for comments */
+
+  margin-bottom: 10px;
+  /* Space below each comment */
+}
+
+
+/* Comment suthor name styling */
+
+
+.comment strong {
+
+  color: #8a04ff;
+  /* Blue color for author name */
+
+
+}
+
+/* Comment form input styling */
+
+
+.comment-form input,
+.comment-form textarea {
+
+
+  width: 100%;
+  /* Full width for inputs and textarea */
+
+  padding: 10px;
+  /* Space inside inputs and textarea */
+
+  margin-bottom: 10px;
+  /* Space below inputs and textarea */
+
+  border: 1px solid #ccc;
+  /* Light gray border */
+
+  border-radius: 4px;
+  /* Rounded corners for inputs and textarea */
+
+}
+
+
+
 
 /* Comment submit button styling */
-.comment-form button{
-  background:#8d06c7;/* Green background for submit button */
-  color:#fff;/* White text for submit button */
-  border:none;/* Remove default button border */
-  padding:10px 15px;/* Space inside submit button */
-  border-radius:4px;/* Rounded corners for submit button */
-  cursor:pointer;/* Pointer cursor on hover */
-  transition:background 0.3s;/* Smooth background transition on hover */
+
+.comment-form button {
+
+  background: #8d06c7;
+  /* Green background for submit button */
+
+  color: #fff;
+  /* White text for submit button */
+
+  border: none;
+  /* Remove default button border */
+
+
+
+
+
+  padding: 10px 15px;
+  /* Space inside submit button */
+
+  border-radius: 4px;
+  /* Rounded corners for submit button */
+
+  cursor: pointer;
+  /* Pointer cursor on hover */
+
+  transition: background 0.3s;
+  /* Smooth background transition on hover */
 }
+
+
 /* Submit button hover effect */
-.comment-form button:hover{
-  background:#4d046c;/* Darker green on hover */
+.comment-form button:hover {
+  background: #4d046c;
+  /* Darker green on hover */
+
 }
+
 /* Footer styling */
-footer{
-  background:#8d06c7;/* Dark background for footer */
-  color:#fff;/* White text in footer */
-  text-align:center;/* Center align footer content */
-  padding:15px;/* Space around footer content */
-  position:relative;
-  bottom:0;
-  width:100%;
-  margin-top:20px;/* Space above footer */
+
+footer {
+
+  background: #8d06c7;
+  /* Dark background for footer */
+
+  color: #fff;
+  /* White text in footer */
+
+  text-align: center;
+  /* Center align footer content */
+
+  padding: 15px;
+  /* Space around footer content */
+
+  position: relative;
+
+  bottom: 0;
+
+  width: 100%;
+
+  margin-top: 20px;
+  /* Space above footer */
+
+
 }
+
 /* Responsive design for smaller screens */
+
 @media (max-width: 600px) {
-  #searchInput, #categoryFilter {
-    width: 90%; /* Full width on small screens */
+
+  #searchInput,
+  #categoryFilter {
+
+    width: 90%;
+    /* Full width on small screens */
   }
+
   nav ul {
-    flex-direction: column; /* Stack navigation items vertically */
+
+    flex-direction: column;
+    /* Stack navigation items vertically */
+
   }
+
+
 }

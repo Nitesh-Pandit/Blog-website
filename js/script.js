@@ -1,70 +1,174 @@
-// -------Search Functionality---------
-document.getElementById('searchInput');
-// --------Category Filter--------
-document.getElementById('categoryFilter');
-// --------Blog Posts--------
-const posts=document.querySelectorAll('.blog-post');
-// --------Event Listeners--------
-searchInput.addEventListener("keyup",function(){
-  filterPosts();
-});
-// -------Category Filter Event Listener--------
-categoryFilter.addEventListener("change",function(){
-  filterPosts();
-});
-// -------Filter Function--------
-function filterPosts(){ 
-  const query =searchInput.value.toLowerCase();
-  const category =categoryFilter.value.toLowerCase();
-  // -------Filter Logic--------
-  posts.forEach(post=>{
-    const text=post.textContent.toLowerCase();
-    const tags=post.dataset.tags.toLowerCase();
-    const matchesSearch=text.includes(query);
-    const matchesCategory=category==="all"||tags.includes(category);
-    // -------Show/Hide Posts--------
-    post.style.display=matchesSearch&&matchesCategory?"block":"none";
-  });
+// Get UI elements
+
+const searchInput = document.getElementById("searchInput");
+
+const categoryFilter = document.getElementById("categoryFilter");
+
+
+const posts = document.querySelectorAll(".blog-post");
+
+
+
+// Add event listeners for search and filter inputs
+
+searchInput.addEventListener("keyup", filterPosts);
+
+categoryFilter.addEventListener("change", filterPosts);
+
+
+
+// Function to filter blog posts based on search query and category
+
+function filterPosts() {
+
+  const query = searchInput.value.toLowerCase();
+
+  const category = categoryFilter.value.toLowerCase();
+
+
+
+  posts.forEach((post) => {
+
+    const text = post.textContent.toLowerCase();
+
+    const tags = post.dataset.tags.toLowerCase();
+
+
+
+    const matchesSearch = text.includes(query);
+
+    const matchesCategory = category === "all" || tags.includes(category);
+
+
+
+
+
+
+    post.style.display = matchesSearch && matchesCategory ? "block" : "none";
+  })
+    ;
 }
-// -------Comment System---------
 
-// -------Event Listener for Comment Submission--------
-document.querySelectorAll('.comment-form').forEach(form=>{
-  form.addEventListener("submit",function(e){
+
+// Comment system: add comments dynamically with validation
+
+document.querySelectorAll(".comment-form").forEach((form) => {
+
+  form.addEventListener("submit", function (e) {
+
     e.preventDefault();
-    const name=form.querySelector("input").value.trim();
-    const message=form.querySelector("textarea").value.trim();
-    // -------Validation and Add comment--------
-    if(name && message){
-      const commnetList=form.previousElementSibling;
-      const comment=document.createElement("div");
+
+    const nameInput = form.querySelector("input");
+
+    const messageInput = form.querySelector("textarea");
+
+
+
+
+    const name = nameInput.value.trim();
+
+    const message = messageInput.value.trim();
+
+
+
+    if (name && message) {
+
+
+
+      const commentList = form.previousElementSibling;
+
+      const comment = document.createElement("div");
+
+
       comment.classList.add("comment");
-      comment.innerHTML=`<strong>${name}:</strong>${message}`;
-      commnetList.appendChild(comment);
+
+      comment.innerHTML = `<strong>${sanitize(name)}:</strong> ${sanitize(
+
+        message
+
+
+      )}`;
+
+
+
+      commentList.appendChild(comment);
+
+
       form.reset();
+    } else {
+
+      alert("Please fill in both name and comment.");
     }
-  });
+
+  }) ;
 });
 
-// -------Social Media Share---------
-// -------Function for Share Buttons--------
-function sharePost(platform,title){
-  const url=encodeURIComponent(window.location.href);
-  const text=encodeURIComponent(`Check out this post: ${title}`); 
-  let shareUrl="";
-  // -------Construct Share URL Based on Platform--------
-  if(platform==="facebook")
-    shareUrl=`https://www.facebook.com/sharer/sharer.php?u=${url}`;
-  // -------Twitter--------
-  if(platform==="twitter")
-    shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
-  // -------WhatsApp--------
-  if(platform==="whatsapp")
-    shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
-  // -------Linkedin--------
-   if (platform === "linkedin")
-    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-  // Open Share URL in New Tab
+// Social media share function opening the
+//  appropriate platform share URL
+function sharePost(platform, title) {
+
+
+
+  const url = encodeURIComponent(window.location.href);
+
+  const text = encodeURIComponent(`Check out this post: ${title}`);
+
+  let shareUrl = "";
+
+
+
+
+
+  switch (platform) {
+
+    case "facebook":
+
+      shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+
+      break;
+
+    case "twitter":
+
+      shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+
+      break;
+    case "whatsapp":
+
+      shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+
+      break;
+
+    case "linkedin":
+
+      shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+
+      break;
+
+
+    default:
+
+      console.warn("Unsupported social media platform:", platform);
+
+
+      return;
+
+  }
   window.open(shareUrl, "_blank");
+}
+
+
+
+
+// Basic sanitization to prevent injection in comments
+
+function sanitize(str) {
+
+
+  const temp = document.createElement("div");
+
+  temp.textContent = str;
+  return temp.innerHTML;
+
+
 }
 

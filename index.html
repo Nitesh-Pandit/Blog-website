@@ -1,158 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog Website</title>
-  <!-- link to the external CSS stylesheet -->
-   <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-  <!-- Header section containing site title,negigation and search -->
-   <header>
-    <h1>My Blog</h1>
-    <!-- navigation menu -->
-     <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog Website</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header section containing site title,negigation and search -->
 
-      <!-- Unordered list for navigation items -->
-       <ul id="navMenu">
-        <!-- Navigation link for different blog posts -->
-         <li><a href="#post1">BLOG 1</a></li>
-         <li><a href="#post2">BLOG 2</a></li>
-         <li><a href="#post3">BLOG 3</a></li>
-       </ul>
-     </nav>
+    <header>
+      <h1>My Blog</h1>
+
+      <!-- navigation menu -->
+
+      <nav>
+        <!-- Unordered list for navigation items -->
+
+        <ul id="navMenu">
+          <!-- Navigation link for different blog posts -->
+
+          <li><a href="#post1">BLOG 1</a></li>
+
+          <li><a href="#post2">BLOG 2</a></li>
+
+          <li><a href="#post3">BLOG 3</a></li>
+        </ul>
+      </nav>
+
       <!-- Search and category Filter -->
-      <input type="text" id="searchInput" placeholder="Search blog posts..."/>
+
+      <input type="text" id="searchInput" placeholder="Search blog posts..." />
+
       <select name="" id="categoryFilter">
         <option value="all">All Categories</option>
         <option value="village life">Village Life</option>
         <option value="university">University</option>
         <option value="festival">Festival</option>
       </select>
-   </header>
-  <!-- Main content area for blog posts -->
-   <main id="blogPosts">
-    <!-- First blog post article -->
-     <article id="post1" class="blog-post" data-tags="village life nature">
+    </header>
 
-    <!-- Blog post title -->
-     <h2>Exploring village Life</h2>
-     <!-- Publication date -->
-      <p class="date">Published on: October 10, 2025</p>
-      <!-- Blog post image -->
-      <img src="images/image.png" alt="Village"/>
-      <!-- Blog post content -->
-      <p> Village life is filled with simplicity and peace. The mornings start
-        with birds chirping and the aroma of fresh air all around. People work
-        together and help each other in daily activities.</p>
+    <!-- Main content area for blog posts -->
+
+    <main id="blogPosts">
+      <!-- First blog post article -->
+
+      <article id="post1" class="blog-post" data-tags="village life nature">
+        <!-- Blog post title -->
+
+        <h2>Exploring village Life</h2>
+
+        <!-- Publication date -->
+        <p class="date">Published on: October 10, 2025</p>
+
+        <!-- Blog post image -->
+        <img src="images/image1.png" alt="Village" />
+
+        <!-- Blog post content -->
+
+        <p>
+          Village life is filled with simplicity and peace. The mornings start
+          with birds chirping and the aroma of fresh air all around. People work
+          together and help each other in daily activities.
+        </p>
+
         <!-- Tags -->
-         <p class="tags">Tags: <span>Village</span><span>Life</span><span>Nature</span></p>
-         <!-- Social share -->
-           <div class="share-buttons">Share:
-        <!-- Facebook share button -->
-        <button onclick="sharePost('facebook', 'Exploring Village Life')">Facebook</button>
-        <!-- Twitter share button -->
-        <button onclick="sharePost('twitter', 'Exploring Village Life')">Twitter</button>
-        <!-- WhatsApp share button -->
-        <button onclick="sharePost('whatsapp', 'Exploring Village Life')">WhatsApp</button>
-        <!-- Linkedin share button -->
-        <button onclick="sharePost('linkedin', 'Exploring Village Life')">LinkedIn</button>
-      </div>
-      <!-- Comments section for first blog -->
-       <section class="comments">
-        <h3>Comments</h3>
-        <div class="comment-list"></div>
+
+        <p class="tags">
+          Tags: <span>Village</span><span>Life</span><span>Nature</span>
+        </p>
+        <!-- Social share -->
+
+        <div class="share-buttons">
+          Share:
+
+          <!-- Facebook share button -->
+
+          <button onclick="sharePost('facebook', 'Exploring Village Life')">
+            Facebook
+          </button>
+
+          <!-- Twitter share button -->
+
+          <button onclick="sharePost('twitter', 'Exploring Village Life')">
+            Twitter
+          </button>
+
+          <!-- WhatsApp share button -->
+
+          <button onclick="sharePost('whatsapp', 'Exploring Village Life')">
+            WhatsApp
+          </button>
+
+          <!-- Linkedin share button -->
+
+          <button onclick="sharePost('linkedin', 'Exploring Village Life')">
+            LinkedIn
+          </button>
+        </div>
+
+        <!-- Comments section for first blog -->
+        <section class="comments">
+          <h3>Comments</h3>
+          <div class="comment-list"></div>
           <form action="" class="comment-form">
-            <input type="text" placeholder="Your name" required/>
+            <input type="text" placeholder="Your name" required />
             <textarea placeholder="Your comment" required></textarea>
             <button type="submit">Post Comment</button>
           </form>
-       </section>
-     </article>
+        </section>
+      </article>
 
-    <!-- Second blog post article -->
-     <article id="post2" class="blog-post" data-tags="university friends">
-      <!-- Blog post title -->
-       <h2>My University Hostel Experience</h2>
-       <!-- Date for bublication -->
+      <!-- Second blog post article -->
+
+      <article id="post2" class="blog-post" data-tags="university friends">
+        <!-- Blog post title -->
+
+        <h2>My University Hostel Experience</h2>
+
+        <!-- Date for bublication -->
+
         <p class="date">Published on: October 11, 2025</p>
+
         <!-- Blog post image -->
-        <img src="images/image1.png" alt="Hostel"/>
+
+        <img src="images/image.png" alt="Hostel" />
+
         <!-- Blog post content -->
-        <p> Staying in a university hostel is an unforgettable experience. It
+
+        <p>
+          Staying in a university hostel is an unforgettable experience. It
           teaches you independence and helps you make lifelong friends. The
           shared experiences and late-night talks create a unique bond among
-          hostel mates.</p>
-          <!-- Tags -->
-           <p class="tags">Tags: <span>University</span><span>Hostel</span><span>Friends</span></p>
-           <!-- Social share -->
-           <div class="share-buttons">Share:
-        <!-- Facebook share button -->
-        <button onclick="sharePost('facebook', 'My University Hostel Experience')">Facebook</button>
-        <!-- Twitter share button -->
-        <button onclick="sharePost('twitter', 'My University Hostel Experience')">Twitter</button>
-        <!-- WhatsApp share button -->
-        <button onclick="sharePost('whatsapp', 'My University Hostel Experience')">WhatsApp</button>
-        <!-- Linkedin share button -->
-        <button onclick="sharePost('linkedin', 'My University Hostel Experience')">LinkedIn</button>
-      </div>
-      <!-- Comments section for second blog -->
-       <section class="comments">
-        <h3>Comments</h3>
-        <div class="comment-list"></div>
+          hostel mates.
+        </p>
+
+        <!-- Tags -->
+
+        <p class="tags">
+          Tags: <span>University</span><span>Hostel</span><span>Friends</span>
+        </p>
+
+        <!-- Social share -->
+
+        <div class="share-buttons">
+          Share:
+
+          <!-- Facebook share button -->
+
+          <button
+            onclick="sharePost('facebook', 'My University Hostel Experience')"
+          >
+            Facebook
+          </button>
+
+          <!-- Twitter share button -->
+
+          <button
+            onclick="sharePost('twitter', 'My University Hostel Experience')"
+          >
+            Twitter
+          </button>
+
+          <!-- WhatsApp share button -->
+          <button
+            onclick="sharePost('whatsapp', 'My University Hostel Experience')"
+          >
+            WhatsApp
+          </button>
+
+          <!-- Linkedin share button -->
+
+          <button
+            onclick="sharePost('linkedin', 'My University Hostel Experience')"
+          >
+            LinkedIn
+          </button>
+        </div>
+
+        <!-- Comments section for second blog -->
+
+        <section class="comments">
+          <h3>Comments</h3>
+
+          <div class="comment-list"></div>
+
           <form action="" class="comment-form">
-            <input type="text" placeholder="Your name" required/>
+            <input type="text" placeholder="Your name" required />
+
             <textarea placeholder="Your comment" required></textarea>
+
             <button type="submit">Post Comment</button>
           </form>
-       </section>
-     </article>
+        </section>
+      </article>
 
+      <!-- Third blog post article -->
+      <article id="post3" class="blog-post" data-tags="festival culture dance">
+        <!-- Blog post title -->
 
-    <!-- Third blog post article -->
-     <article id="post3" class="blog-post" data-tags="festival culture dance">
-      <!-- Blog post title -->
-       <h2>Diwali Festivals in Our Hostel</h2>
-       <!-- Date for publication -->
+        <h2>Diwali Festivals in Our Hostel</h2>
+
+        <!-- Date for publication -->
+
         <p class="date">Published on: October 12, 2025</p>
+
         <!-- Blog post image -->
-        <img src="images/image2.png" alt="Festival Dance"/>
+
+        <img src="images/image2.png" alt="Festival Dance" />
+
         <!-- Blog post content -->
-        <p> Festivals are a time of joy and celebration. Dance is an integral
-          part of many festivals, bringing people together in a vibrant display
-          of culture and tradition. The rhythmic movements and colorful attire
-          create a lively atmosphere that everyone enjoys.</p>
-          <!-- Tags -->
-           <p class="tags">Tags: <span>Festival</span><span>Culture</span><span>Dance</span></p>
-           <!-- Social share -->
-           <div class="share-buttons">Share:
-        <!-- Facebook share button -->
-        <button onclick="sharePost('facebook', 'Celebrating Festivals in Our Hostel')">Facebook</button>
-        <!-- Twitter share button -->
-        <button onclick="sharePost('twitter', 'Celebrating Festivals in Our Hostel')">Twitter</button>
-        <!-- WhatsApp share button -->
-        <button onclick="sharePost('whatsapp', 'Celebrating Festivals in Our Hostel')">WhatsApp</button>
-        <!-- Linkedin share button -->
-        <button onclick="sharePost('linkedin', 'Celebrating Festivals in Our Hostel')">LinkedIn</button>
-      </div>
-      <!-- Comments section for third blog -->
-       <section class="comments">
-        <h3>Comments</h3>
-        <div class="comment-list"></div>
+
+        <p>
+          Festivals are a time of joy and celebration. Dance is an integral part
+          of many festivals, bringing people together in a vibrant display of
+          culture and tradition. The rhythmic movements and colorful attire
+          create a lively atmosphere that everyone enjoys.
+        </p>
+
+        <!-- Tags -->
+
+        <p class="tags">
+          Tags: <span>Festival</span><span>Culture</span><span>Dance</span>
+        </p>
+
+        <!-- Social share -->
+
+        <div class="share-buttons">
+          Share:
+          <!-- Facebook share button -->
+
+          <button
+            onclick="sharePost('facebook', 'Celebrating Festivals in Our Hostel')"
+          >
+            Facebook
+          </button>
+
+          <!-- Twitter share button -->
+
+          <button
+            onclick="sharePost('twitter', 'Celebrating Festivals in Our Hostel')"
+          >
+            Twitter
+          </button>
+
+          <!-- WhatsApp share button -->
+
+          <button
+            onclick="sharePost('whatsapp', 'Celebrating Festivals in Our Hostel')"
+          >
+            WhatsApp
+          </button>
+
+          <!-- Linkedin share button -->
+
+          <button
+            onclick="sharePost('linkedin', 'Celebrating Festivals in Our Hostel')"
+          >
+            LinkedIn
+          </button>
+        </div>
+
+        <!-- Comments section for third blog -->
+
+        <section class="comments">
+          <h3>Comments</h3>
+
+          <div class="comment-list"></div>
+
           <form action="" class="comment-form">
-            <input type="text" placeholder="Your name" required/>
+            <input type="text" placeholder="Your name" required />
+
             <textarea placeholder="Your comment" required></textarea>
+
             <button type="submit">Post Comment</button>
           </form>
-       </section>
-     </article>
-   </main>
-   <!-- Footer  -->
+        </section>
+      </article>
+    </main>
+    <!-- Footer  -->
+
     <footer>
       <p>&copy; 2025 My Blog Website. All rights reserved.</p>
     </footer>
+
     <!-- Link to external JavaScript file -->
+
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>
