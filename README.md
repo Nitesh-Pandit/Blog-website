@@ -1,8 +1,5 @@
 # 🚀 My Blog Website 📝
 
-![Project Banner](https://via.placeholder.com/900x200.png?text=My+Blog+Website)
-
-
 ## ✨ Overview
 A responsive and interactive personal blog website showcasing posts about Village Life 🌾, University Experiences 🎓, and Festivals 🎉, built during a full stack web development internship. This project includes features like search 🔍, category filtering 📂, commenting 💬, and social media sharing 🔗.
 
