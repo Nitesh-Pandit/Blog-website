@@ -72,7 +72,7 @@ post comments, and share blogs on social media platforms.
 
 ## 📥 Installation and Setup
 1. Clone the repository:
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/Nitesh-Pandit/Blog-website
 2. Navigate to the project folder:
 3. Open `index.html` in your web browser to view the website.
 
